@@ -7,8 +7,8 @@
 }
 
 @font-face {
-	font-family: DINNextLTPro-Regular;
-	src: url(/DINNextLTPro-Regular.otf);
+	font-family: DINNextLTPro-UltraLight;
+	src: url(/DINNextLTPro-UltraLight.otf);
 }
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
@@ -18,11 +18,15 @@
 }
 
 .next-regular {
-	font-family: DINNextLTPro-Regular;
+	font-family: DINNextLTPro-UltraLight;
 }
 
 .next-lightlt {
 	font-family: DINNextLTPro-UltraLightIt;
+}
+
+.centered {
+	text-align: center;
 }
 
 section {
@@ -86,10 +90,12 @@ body, html {
 		color: #FFF;
 		margin: 0;
     text-align: center;
-    padding-top: 35px;
-    font-size: 58px;
+    padding-top: 45px;
+    font-size: 44px;
     padding-bottom: 35px;
-    line-height: 69px;
+    line-height: 55px;
+		font-weight: 100;
+		padding-bottom: 5px;
 	}
 }
 
@@ -100,6 +106,9 @@ body, html {
 
 .pivot-slogan {
 	margin-bottom: 40px;
+	font-size: 18px;
+	line-height: 27px;
+	margin-top: 15px;
 }
 
 .box {
@@ -110,13 +119,12 @@ body, html {
 	font-size: 20px;
 
 	> div {
-		padding-left: 60px;
+		padding-left: 80px;
 		background-image: url(/ServiceIcon_Creative.svg);
 		background-repeat: no-repeat;
 		background-size: 50px;
-		width: 60%;
 		margin: 0 auto;
-		background-position-y: 13px;
+		background-position: 20px 15px;
 	}
 
 	&.online {
@@ -126,6 +134,19 @@ body, html {
 	&.content {
 		> div { background-image: url(/ServiceIcon_Content.svg); }
 	}
+}
+
+.motto {
+	text-align: center;
+	color: #FFF;
+	font-size: 16px;
+}
+
+.view-case.motto-button {
+	color: #000;
+	background: rgba(255, 255, 255, 0.7);
+	margin-top: 10px;
+	margin-bottom: 55px;
 }
 
 .devin {
